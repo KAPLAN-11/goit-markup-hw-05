@@ -1,0 +1,450 @@
+.raleway-uniquifier {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+body {
+    font-family: "Roboto",sans-serif;
+    color: #434455;
+    background-color: #ffffff;
+}
+.header {
+    border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+}
+.container {
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.navigation-bar {
+    display: flex;
+    align-items: center;
+}
+.logo-top {
+    font-family: "Raleway",sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4D5AE5;
+    text-decoration: none;
+    margin-right: 76px; 
+}
+.logo-top-span {
+    color: #2E2F42;
+    font-family: "Raleway",sans-serif;
+}
+.nav {
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+
+}
+.navigation {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 24px 0;
+    position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+.navigation.current::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: #404BBF;
+    border-radius: 2px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform-origin: left;
+    animation-name: current;
+    animation-duration: 800ms;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+.current {
+    position: relative;
+    color: #404BBF;
+}
+.navigation:hover,
+.navigation:focus, 
+.address-a:hover,
+.address-a:focus {
+    color: #404BBF;
+ }
+
+.address{
+    font-style: normal;
+}
+.address-ul {
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+}
+.address-a {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+.address-tel {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+.order-service {
+    background-color: #2e2f42;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/office.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 188px 0;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main {
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    max-width: 496px; 
+    margin: 0 auto; 
+    
+}
+.button {
+    background-color: #4D5AE5;
+    font-family: "Roboto",sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5rem;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 48px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+
+}
+.button:hover {
+    background-color: #404BBF;
+}
+.button:focus {
+    background-color: #404BBF;
+}
+.abaut {
+    padding: 120px 0;
+
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.abaut-us {
+    list-style-type: none;
+    display: flex;
+    gap: 24px;
+}
+.abaut-li {
+    width: calc((100% - 3 * 24px)/4);
+}
+
+.abaut-us-h {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+    margin-bottom: 8px;
+
+}
+.abaut-us-p {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+.abaut-us-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: #F4F4FD;
+    border-radius: 4px;
+    border: 1px solid #8e8f99;
+    margin-bottom: 8px;
+}
+.our-team {
+    background-color: #F4F4FD;
+    padding: 120px 0;
+
+}
+.title {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2E2F42;
+    margin-bottom: 72px;
+}
+.our-team-ul {
+    display: flex;
+    gap: 24px;
+    
+}
+.team__soc-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+.team_soc-item {
+    width: 40px;
+    height: 40px;
+    list-style-type: none;
+
+}
+.team_soc-link {
+    width: 100%;
+    height: 100%;
+    background-color: #4D5AE5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+
+}
+.team_soc-link:hover
+.team_soc-link:focus {
+    background-color: #404BBF;
+}
+.team_soc-icon {
+    fill: #F4F4FD;
+}
+.our-team-li {
+    background-color: #ffffff;
+    list-style-type: none;
+    border-radius: 0px 0px 4px 4px;
+    display: block;
+    width:calc((100%-72px)/4);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08)
+}
+.our-team-div {
+    padding: 32px 0;
+}
+.our-team-li img {
+    display: block;
+}
+    
+.name-tag {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2E2F42 ;
+    text-align: center;
+    margin-bottom: 8px;
+
+}
+.position {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    text-align: center;
+}
+.our-p {
+    padding: 120px 0;
+
+}
+.our-p h2 {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2E2F42;
+    margin-bottom: 72px;
+}
+.our-portfolio-ul {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+    flex-shrink: 0;
+}
+.our-portfolio-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2E2F42;   
+}
+.explanation {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+.our-portfolio-li {
+    list-style-type: none;
+    display: block;
+    flex-basis: calc((100% - 3 * 24px)/4);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+.our-portfolio-li img {
+    display: block;
+}
+.portfolio-drop {
+    position: relative;
+    overflow: hidden;
+}
+.portfolio-drop-text {
+    position: absolute;
+    top: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #F4F4FD;
+    padding: 40px 32px;
+    background-color: #4D5AE5;
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+.our-portfolio-li:hover
+.our-portfolio-li:focus {
+    background-color: #404BBF;
+}
+.our-portfolio-li:hover .portfolio-drop-text {
+    transform: translateY(-5%);
+}
+
+.our-portfolio-div {
+    margin-bottom:8px;
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    
+}
+.our-portfolio-li div {
+    margin-bottom: 8px;
+}
+.footer{
+    background-color: #2E2F42;
+    padding: 100px 0;
+}
+.footer__tagline {
+    margin-right: 120px;
+
+}
+.logo-lower {
+    font-family:"Raleway",sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height:  1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4D5AE5;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 16px;
+
+}
+.logo-lower-span {
+    color: #F4F4FD;
+    font-family:"Raleway",sans-serif;
+}
+.footer-p {
+    line-height: 1.5;
+    color: #F4F4FD;
+    letter-spacing: 0.02em;
+    max-width: 264px;
+}
+.footer__soc {
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+
+}
+.footer__soc-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    
+    margin-bottom: 16px;
+    color: white;
+}
+
+.footer__soc-list {
+    display: flex;
+    gap: 16px;
+    list-style-type: none;
+}
+.footer__soc-item {
+    width: 40px;
+    height: 40px;
+
+}
+
+.footer__soc-link:hover,
+.footer__soc-link:focus {
+    background-color: #31d0aa;
+
+}
+
+.footer__soc-link {
+    width: 100%;
+    height: 100%;
+    background-color: #4D5AE5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+
+}
+.footer__soc-link svg {
+    width: 24px;
+    height: 24px;
+}
+.footer__soc-icon {
+    fill: #F4F4FD;
+
+}
+.footer .container {
+    display: flex;
+    align-items: baseline;
+}
